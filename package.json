@@ -1,0 +1,17 @@
+{
+  "name": "adraffly-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx postgraphile -c postgres://postgres@localhost/postgres --enhance-graphiql --cors --dynamic-json --append-plugins postgraphile-plugin-connection-filter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postgraphile": "^4.7.0",
+    "postgraphile-plugin-connection-filter": "^2.0.0"
+  }
+}
